@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -42,109 +43,109 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif;}
 
 /* ── Top bar ── */
 .topbar{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:16px 20px 12px;
-  flex-shrink:0;
-  background:var(--bg);
-  z-index:10;
+display:flex;align-items:center;justify-content:space-between;
+padding:16px 20px 12px;
+flex-shrink:0;
+background:var(–bg);
+z-index:10;
 }
-.logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.5px;}
-.logo em{color:var(--accent);font-style:normal;}
+.logo{font-family:‘Syne’,sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.5px;}
+.logo em{color:var(–accent);font-style:normal;}
 .date-chip{
-  background:var(--bg3);border:1px solid var(--border);
-  border-radius:100px;padding:5px 12px;
-  font-size:12px;color:var(--muted);
+background:var(–bg3);border:1px solid var(–border);
+border-radius:100px;padding:5px 12px;
+font-size:12px;color:var(–muted);
 }
 
 /* ── Scroll area ── */
 .pages{flex:1;overflow:hidden;position:relative;}
 .page{
-  position:absolute;inset:0;
-  overflow-y:auto;overflow-x:hidden;
-  padding:16px 16px calc(var(--nav-h) + 16px);
-  display:none;
-  -webkit-overflow-scrolling:touch;
+position:absolute;inset:0;
+overflow-y:auto;overflow-x:hidden;
+padding:16px 16px calc(var(–nav-h) + 16px);
+display:none;
+-webkit-overflow-scrolling:touch;
 }
 .page.active{display:block;}
 .page::-webkit-scrollbar{display:none;}
 
 /* ── Bottom nav ── */
 .botnav{
-  position:absolute;bottom:0;left:0;right:0;
-  height:var(--nav-h);
-  background:var(--bg2);
-  border-top:1px solid var(--border);
-  display:flex;align-items:center;
-  z-index:20;
-  padding-bottom:env(safe-area-inset-bottom);
+position:absolute;bottom:0;left:0;right:0;
+height:var(–nav-h);
+background:var(–bg2);
+border-top:1px solid var(–border);
+display:flex;align-items:center;
+z-index:20;
+padding-bottom:env(safe-area-inset-bottom);
 }
 .navbtn{
-  flex:1;display:flex;flex-direction:column;align-items:center;
-  gap:4px;padding:10px 4px;
-  border:none;background:transparent;cursor:pointer;
-  color:var(--muted);transition:color 0.18s;
+flex:1;display:flex;flex-direction:column;align-items:center;
+gap:4px;padding:10px 4px;
+border:none;background:transparent;cursor:pointer;
+color:var(–muted);transition:color 0.18s;
 }
-.navbtn.active{color:var(--accent);}
+.navbtn.active{color:var(–accent);}
 .navbtn svg{width:22px;height:22px;stroke-width:1.8;}
-.navbtn span{font-size:10px;font-family:'Syne',sans-serif;font-weight:600;letter-spacing:0.3px;}
+.navbtn span{font-size:10px;font-family:‘Syne’,sans-serif;font-weight:600;letter-spacing:0.3px;}
 .navdot{
-  width:4px;height:4px;border-radius:50%;
-  background:var(--accent);margin-top:1px;
-  opacity:0;transition:opacity 0.18s;
+width:4px;height:4px;border-radius:50%;
+background:var(–accent);margin-top:1px;
+opacity:0;transition:opacity 0.18s;
 }
 .navbtn.active .navdot{opacity:1;}
 
 /* ── Cards ── */
 .card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:var(--r);padding:18px;
-  margin-bottom:14px;
+background:var(–card);border:1px solid var(–border);
+border-radius:var(–r);padding:18px;
+margin-bottom:14px;
 }
 .card-title{
-  font-family:'Syne',sans-serif;font-size:11px;font-weight:700;
-  text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);
-  margin-bottom:12px;
+font-family:‘Syne’,sans-serif;font-size:11px;font-weight:700;
+text-transform:uppercase;letter-spacing:1.2px;color:var(–muted);
+margin-bottom:12px;
 }
 
 /* ── Inner tab pills ── */
 .pill-tabs{display:flex;gap:6px;margin-bottom:16px;overflow-x:auto;padding-bottom:2px;flex-shrink:0;}
 .pill-tabs::-webkit-scrollbar{display:none;}
 .ptab{
-  padding:7px 14px;border-radius:100px;font-size:12px;
-  font-family:'Syne',sans-serif;font-weight:700;cursor:pointer;
-  border:1px solid var(--border);background:transparent;color:var(--muted);
-  transition:all 0.15s;white-space:nowrap;flex-shrink:0;
+padding:7px 14px;border-radius:100px;font-size:12px;
+font-family:‘Syne’,sans-serif;font-weight:700;cursor:pointer;
+border:1px solid var(–border);background:transparent;color:var(–muted);
+transition:all 0.15s;white-space:nowrap;flex-shrink:0;
 }
-.ptab.active{background:var(--accent);color:#0c0c0e;border-color:var(--accent);}
+.ptab.active{background:var(–accent);color:#0c0c0e;border-color:var(–accent);}
 
 /* ── Inputs ── */
 input,select,textarea{
-  background:var(--bg3);border:1px solid var(--border);
-  border-radius:var(--rsm);color:var(--text);
-  font-family:'DM Sans',sans-serif;font-size:15px;
-  padding:11px 14px;width:100%;outline:none;
-  transition:border 0.2s;
-  -webkit-appearance:none;
+background:var(–bg3);border:1px solid var(–border);
+border-radius:var(–rsm);color:var(–text);
+font-family:‘DM Sans’,sans-serif;font-size:15px;
+padding:11px 14px;width:100%;outline:none;
+transition:border 0.2s;
+-webkit-appearance:none;
 }
-input:focus,select:focus,textarea:focus{border-color:var(--accent);}
-select option{background:var(--bg3);}
-label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px;}
+input:focus,select:focus,textarea:focus{border-color:var(–accent);}
+select option{background:var(–bg3);}
+label{font-size:12px;color:var(–muted);display:block;margin-bottom:5px;}
 .fg{margin-bottom:13px;}
 .fr{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 
 /* ── Buttons ── */
 .btn{
-  border:none;border-radius:var(--rsm);padding:13px 20px;
-  font-family:'Syne',sans-serif;font-size:13px;font-weight:700;
-  cursor:pointer;letter-spacing:0.2px;transition:all 0.15s;
-  display:inline-flex;align-items:center;justify-content:center;gap:7px;
-  -webkit-appearance:none;
+border:none;border-radius:var(–rsm);padding:13px 20px;
+font-family:‘Syne’,sans-serif;font-size:13px;font-weight:700;
+cursor:pointer;letter-spacing:0.2px;transition:all 0.15s;
+display:inline-flex;align-items:center;justify-content:center;gap:7px;
+-webkit-appearance:none;
 }
-.btn-accent{background:var(--accent);color:#0c0c0e;}
-.btn-accent:active{background:var(--accent2);transform:scale(0.98);}
-.btn-ghost{background:var(--bg3);color:var(--text);border:1px solid var(--border);}
-.btn-ghost:active{background:var(--bg4);}
-.btn-danger{background:rgba(255,90,90,0.12);color:var(--red);border:1px solid rgba(255,90,90,0.2);}
+.btn-accent{background:var(–accent);color:#0c0c0e;}
+.btn-accent:active{background:var(–accent2);transform:scale(0.98);}
+.btn-ghost{background:var(–bg3);color:var(–text);border:1px solid var(–border);}
+.btn-ghost:active{background:var(–bg4);}
+.btn-danger{background:rgba(255,90,90,0.12);color:var(–red);border:1px solid rgba(255,90,90,0.2);}
 .btn-sm{padding:8px 14px;font-size:12px;}
 .btn-full{width:100%;}
 .btn-strava{background:#FC4C02;color:#fff;}
@@ -154,488 +155,585 @@ label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px;}
 .ring-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;}
 .ring-stats{display:flex;gap:20px;justify-content:center;}
 .rstat{text-align:center;}
-.rstat-val{font-family:'Syne',sans-serif;font-size:16px;font-weight:800;}
-.rstat-label{font-size:11px;color:var(--muted);margin-top:1px;}
+.rstat-val{font-family:‘Syne’,sans-serif;font-size:16px;font-weight:800;}
+.rstat-label{font-size:11px;color:var(–muted);margin-top:1px;}
 
 /* ── Macro bars ── */
 .mbar-row{margin-bottom:13px;}
 .mbar-head{display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px;}
-.mbar-track{height:7px;background:var(--bg4);border-radius:100px;overflow:hidden;}
+.mbar-track{height:7px;background:var(–bg4);border-radius:100px;overflow:hidden;}
 .mbar-fill{height:100%;border-radius:100px;transition:width 0.5s ease;}
 
 /* ── Stat grid ── */
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
-.stat-card{background:var(--bg3);border-radius:var(--rsm);padding:14px;}
-.stat-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;line-height:1;}
-.stat-label{font-size:11px;color:var(--muted);margin-top:4px;}
+.stat-card{background:var(–bg3);border-radius:var(–rsm);padding:14px;}
+.stat-val{font-family:‘Syne’,sans-serif;font-size:26px;font-weight:800;line-height:1;}
+.stat-label{font-size:11px;color:var(–muted);margin-top:4px;}
 
 /* ── Food items ── */
 .food-item{
-  display:flex;align-items:center;
-  padding:11px 0;border-bottom:1px solid var(--border);gap:10px;
+display:flex;align-items:center;
+padding:11px 0;border-bottom:1px solid var(–border);gap:10px;
 }
 .food-item:last-child{border-bottom:none;}
 .food-name{font-size:14px;font-weight:500;flex:1;min-width:0;}
-.food-meal-tag{font-size:11px;color:var(--muted);}
+.food-meal-tag{font-size:11px;color:var(–muted);}
 .macro-badges{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;}
-.mb{font-size:10px;font-weight:700;padding:3px 7px;border-radius:100px;font-family:'Syne',sans-serif;}
-.mb-cal{background:rgba(255,170,85,0.15);color:var(--orange);}
-.mb-p{background:rgba(90,170,255,0.15);color:var(--blue);}
-.mb-c{background:rgba(167,139,250,0.15);color:var(--purple);}
-.mb-f{background:rgba(200,241,53,0.15);color:var(--accent);}
+.mb{font-size:10px;font-weight:700;padding:3px 7px;border-radius:100px;font-family:‘Syne’,sans-serif;}
+.mb-cal{background:rgba(255,170,85,0.15);color:var(–orange);}
+.mb-p{background:rgba(90,170,255,0.15);color:var(–blue);}
+.mb-c{background:rgba(167,139,250,0.15);color:var(–purple);}
+.mb-f{background:rgba(200,241,53,0.15);color:var(–accent);}
 
 /* ── AI zone ── */
 .ai-zone{
-  border:2px dashed rgba(200,241,53,0.3);border-radius:var(--r);
-  padding:32px 20px;text-align:center;cursor:pointer;
-  transition:all 0.2s;
+border:2px dashed rgba(200,241,53,0.3);border-radius:var(–r);
+padding:32px 20px;text-align:center;cursor:pointer;
+transition:all 0.2s;
 }
 .ai-zone:active{background:rgba(200,241,53,0.04);}
-.ai-zone h3{font-family:'Syne',sans-serif;font-size:15px;color:var(--accent);margin-bottom:6px;}
-.ai-zone p{font-size:12px;color:var(--muted);}
+.ai-zone h3{font-family:‘Syne’,sans-serif;font-size:15px;color:var(–accent);margin-bottom:6px;}
+.ai-zone p{font-size:12px;color:var(–muted);}
 #food-file-input{display:none;}
 
 .ai-result{
-  background:rgba(200,241,53,0.05);border:1px solid rgba(200,241,53,0.2);
-  border-radius:var(--rsm);padding:14px;margin-top:14px;
+background:rgba(200,241,53,0.05);border:1px solid rgba(200,241,53,0.2);
+border-radius:var(–rsm);padding:14px;margin-top:14px;
 }
-.ai-result h4{font-family:'Syne',sans-serif;font-size:13px;color:var(--accent);margin-bottom:10px;}
+.ai-result h4{font-family:‘Syne’,sans-serif;font-size:13px;color:var(–accent);margin-bottom:10px;}
 .ai-macros{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;}
 .ai-macro{text-align:center;}
-.ai-macro-val{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;}
-.ai-macro-label{font-size:10px;color:var(--muted);margin-top:2px;}
-.ai-loading{display:flex;align-items:center;gap:10px;padding:14px;color:var(--muted);font-size:13px;}
-.spinner{width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.7s linear infinite;flex-shrink:0;}
+.ai-macro-val{font-family:‘Syne’,sans-serif;font-size:20px;font-weight:800;}
+.ai-macro-label{font-size:10px;color:var(–muted);margin-top:2px;}
+.ai-loading{display:flex;align-items:center;gap:10px;padding:14px;color:var(–muted);font-size:13px;}
+.spinner{width:16px;height:16px;border:2px solid var(–border);border-top-color:var(–accent);border-radius:50%;animation:spin 0.7s linear infinite;flex-shrink:0;}
 @keyframes spin{to{transform:rotate(360deg);}}
 
 /* ── Exercise ── */
-.ex-item{background:var(--bg3);border-radius:var(--rsm);padding:14px;margin-bottom:10px;}
+.ex-item{background:var(–bg3);border-radius:var(–rsm);padding:14px;margin-bottom:10px;}
 .ex-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
 .sets-grid{display:grid;grid-template-columns:28px 1fr 1fr 44px;gap:6px;align-items:center;}
-.sh{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;}
-.sn{font-size:12px;color:var(--muted);text-align:center;}
+.sh{font-size:10px;color:var(–muted);text-transform:uppercase;letter-spacing:0.6px;}
+.sn{font-size:12px;color:var(–muted);text-align:center;}
 .si{padding:8px 6px;font-size:13px;text-align:center;}
 
 /* ── Run item ── */
-.run-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);}
+.run-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(–border);}
 .run-icon{width:38px;height:38px;border-radius:50%;background:rgba(200,241,53,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:17px;}
 .run-details{flex:1;min-width:0;}
 .run-title{font-size:13px;font-weight:500;}
-.run-sub{font-size:11px;color:var(--muted);margin-top:1px;}
+.run-sub{font-size:11px;color:var(–muted);margin-top:1px;}
 .run-nums{display:flex;gap:10px;flex-shrink:0;}
 .rn{text-align:right;}
-.rn-val{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;}
-.rn-label{font-size:10px;color:var(--muted);}
+.rn-val{font-family:‘Syne’,sans-serif;font-size:13px;font-weight:700;}
+.rn-label{font-size:10px;color:var(–muted);}
 
 /* ── Weight ── */
-.w-item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);}
+.w-item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(–border);}
 
 /* ── Strava box ── */
-.strava-box{background:rgba(252,76,2,0.07);border:1px solid rgba(252,76,2,0.2);border-radius:var(--r);padding:16px;margin-bottom:14px;}
+.strava-box{background:rgba(252,76,2,0.07);border:1px solid rgba(252,76,2,0.2);border-radius:var(–r);padding:16px;margin-bottom:14px;}
 
 /* ── Callout ── */
-.callout{background:rgba(200,241,53,0.06);border-left:3px solid var(--accent);border-radius:0 var(--rsm) var(--rsm) 0;padding:10px 14px;font-size:12px;color:var(--muted);margin-bottom:14px;}
-.callout strong{color:var(--text);}
+.callout{background:rgba(200,241,53,0.06);border-left:3px solid var(–accent);border-radius:0 var(–rsm) var(–rsm) 0;padding:10px 14px;font-size:12px;color:var(–muted);margin-bottom:14px;}
+.callout strong{color:var(–text);}
 
 /* ── Water glasses ── */
 .water-grid{display:flex;gap:7px;flex-wrap:wrap;}
-.wg{width:34px;height:34px;border-radius:50%;cursor:pointer;transition:all 0.18s;display:flex;align-items:center;justify-content:center;font-size:15px;border:1px solid var(--border);background:var(--bg4);}
-.wg.filled{background:var(--blue);border-color:var(--blue);}
+.wg{width:34px;height:34px;border-radius:50%;cursor:pointer;transition:all 0.18s;display:flex;align-items:center;justify-content:center;font-size:15px;border:1px solid var(–border);background:var(–bg4);}
+.wg.filled{background:var(–blue);border-color:var(–blue);}
 
 /* ── Settings rows ── */
-.srow{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--border);}
+.srow{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(–border);}
 .slabel{font-size:14px;}
-.ssub{font-size:11px;color:var(--muted);margin-top:2px;}
+.ssub{font-size:11px;color:var(–muted);margin-top:2px;}
 
 /* ── PR badge ── */
-.pr-item{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--border);}
+.pr-item{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(–border);}
 
 /* ── Quick food btns ── */
 .quick-food-btn{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:11px 14px;background:var(--bg3);border:1px solid var(--border);
-  border-radius:var(--rsm);cursor:pointer;margin-bottom:8px;
-  font-size:13px;transition:background 0.15s;
-  width:100%;text-align:left;font-family:'DM Sans',sans-serif;color:var(--text);
+display:flex;align-items:center;justify-content:space-between;
+padding:11px 14px;background:var(–bg3);border:1px solid var(–border);
+border-radius:var(–rsm);cursor:pointer;margin-bottom:8px;
+font-size:13px;transition:background 0.15s;
+width:100%;text-align:left;font-family:‘DM Sans’,sans-serif;color:var(–text);
 }
-.quick-food-btn:active{background:var(--bg4);}
-.qf-kcal{font-family:'Syne',sans-serif;font-size:12px;color:var(--orange);font-weight:700;}
+.quick-food-btn:active{background:var(–bg4);}
+.qf-kcal{font-family:‘Syne’,sans-serif;font-size:12px;color:var(–orange);font-weight:700;}
 
 canvas{max-width:100%;}
 </style>
+
 </head>
 <body>
 <div class="shell">
 
   <!-- Top bar -->
+
   <div class="topbar">
     <div class="logo">e<em>tracker</em></div>
     <div class="date-chip" id="today-date"></div>
   </div>
 
   <!-- Pages -->
+
   <div class="pages">
 
-    <!-- ════ DASHBOARD ════ -->
-    <div class="page active" id="page-home">
+```
+<!-- ════ DASHBOARD ════ -->
+<div class="page active" id="page-home">
 
-      <!-- Calorie ring -->
-      <div class="card" style="padding-bottom:20px;">
-        <div class="card-title">Today's calories</div>
-        <div class="ring-wrap">
-          <div style="position:relative;width:150px;height:150px;">
-            <svg width="150" height="150" class="ring-svg">
-              <circle cx="75" cy="75" r="63" fill="none" stroke="var(--bg4)" stroke-width="13"/>
-              <circle cx="75" cy="75" r="63" fill="none" stroke="var(--accent)" stroke-width="13"
-                stroke-linecap="round" stroke-dasharray="395.8" stroke-dashoffset="395.8"
-                id="cal-ring" style="transition:stroke-dashoffset 0.9s ease;"/>
-            </svg>
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-              <div id="dash-cals-in" style="font-family:'Syne',sans-serif;font-size:30px;font-weight:800;line-height:1;">0</div>
-              <div style="font-size:11px;color:var(--muted);">kcal eaten</div>
-            </div>
-          </div>
-          <div class="ring-stats">
-            <div class="rstat"><div class="rstat-val" id="dash-goal">2000</div><div class="rstat-label">goal</div></div>
-            <div class="rstat"><div class="rstat-val" style="color:var(--red);" id="dash-burned">0</div><div class="rstat-label">burned</div></div>
-            <div class="rstat"><div class="rstat-val" style="color:var(--accent);" id="dash-left">2000</div><div class="rstat-label">left</div></div>
-          </div>
+  <!-- Calorie ring -->
+  <div class="card" style="padding-bottom:20px;">
+    <div class="card-title">Today's calories</div>
+    <div class="ring-wrap">
+      <div style="position:relative;width:150px;height:150px;">
+        <svg width="150" height="150" class="ring-svg">
+          <circle cx="75" cy="75" r="63" fill="none" stroke="var(--bg4)" stroke-width="13"/>
+          <circle cx="75" cy="75" r="63" fill="none" stroke="var(--accent)" stroke-width="13"
+            stroke-linecap="round" stroke-dasharray="395.8" stroke-dashoffset="395.8"
+            id="cal-ring" style="transition:stroke-dashoffset 0.9s ease;"/>
+        </svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div id="dash-cals-in" style="font-family:'Syne',sans-serif;font-size:30px;font-weight:800;line-height:1;">0</div>
+          <div style="font-size:11px;color:var(--muted);">kcal eaten</div>
         </div>
       </div>
-
-      <!-- Macros -->
-      <div class="card">
-        <div class="card-title">Macros</div>
-        <div class="mbar-row">
-          <div class="mbar-head"><span style="color:var(--blue);">Protein</span><span id="dash-prot">0 / <b id="dpg">150</b>g</span></div>
-          <div class="mbar-track"><div class="mbar-fill" id="bar-prot" style="background:var(--blue);width:0%"></div></div>
-        </div>
-        <div class="mbar-row">
-          <div class="mbar-head"><span style="color:var(--purple);">Carbs</span><span id="dash-carbs">0 / <b id="dcg">250</b>g</span></div>
-          <div class="mbar-track"><div class="mbar-fill" id="bar-carbs" style="background:var(--purple);width:0%"></div></div>
-        </div>
-        <div class="mbar-row" style="margin-bottom:0;">
-          <div class="mbar-head"><span style="color:var(--accent);">Fat</span><span id="dash-fat">0 / <b id="dfg">65</b>g</span></div>
-          <div class="mbar-track"><div class="mbar-fill" id="bar-fat" style="background:var(--accent);width:0%"></div></div>
-        </div>
-      </div>
-
-      <!-- Stats -->
-      <div class="stat-grid">
-        <div class="stat-card"><div class="stat-val" id="dash-workouts">0</div><div class="stat-label">Workouts this week</div></div>
-        <div class="stat-card"><div class="stat-val" id="dash-km">0.0</div><div class="stat-label">km this week</div></div>
-        <div class="stat-card"><div class="stat-val" id="dash-weight">—</div><div class="stat-label">Current weight (kg)</div></div>
-        <div class="stat-card"><div class="stat-val" id="dash-streak">0</div><div class="stat-label">Day streak 🔥</div></div>
-      </div>
-
-      <!-- Water -->
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-          <div class="card-title" style="margin-bottom:0;">Water</div>
-          <span style="font-size:12px;color:var(--muted);" id="dash-water-label">0 / 8 glasses</span>
-        </div>
-        <div class="water-grid" id="water-glasses"></div>
-      </div>
-
-      <!-- Recent food -->
-      <div class="card">
-        <div class="card-title">Recent food</div>
-        <div id="dash-food-log"><div style="color:var(--muted);font-size:13px;">Nothing logged today — go to Nutrition</div></div>
+      <div class="ring-stats">
+        <div class="rstat"><div class="rstat-val" id="dash-goal">2000</div><div class="rstat-label">goal</div></div>
+        <div class="rstat"><div class="rstat-val" style="color:var(--red);" id="dash-burned">0</div><div class="rstat-label">burned</div></div>
+        <div class="rstat"><div class="rstat-val" style="color:var(--accent);" id="dash-left">2000</div><div class="rstat-label">left</div></div>
       </div>
     </div>
+  </div>
 
-    <!-- ════ NUTRITION ════ -->
-    <div class="page" id="page-nutrition">
-      <div class="pill-tabs">
-        <button class="ptab active" onclick="switchInner('nut','log',this)">Log food</button>
-        <button class="ptab" onclick="switchInner('nut','ai',this)">AI scanner</button>
-        <button class="ptab" onclick="switchInner('nut','hist',this)">Today's log</button>
-      </div>
-
-      <!-- Log food -->
-      <div id="nut-log">
-        <div class="card">
-          <div class="card-title">Add manually</div>
-          <div class="fg"><label>Food name</label><input type="text" id="food-name" placeholder="e.g. Chicken breast 200g"></div>
-          <div class="fr">
-            <div class="fg"><label>Calories (kcal)</label><input type="number" id="food-cal" placeholder="0"></div>
-            <div class="fg"><label>Protein (g)</label><input type="number" id="food-prot" placeholder="0"></div>
-          </div>
-          <div class="fr">
-            <div class="fg"><label>Carbs (g)</label><input type="number" id="food-carbs" placeholder="0"></div>
-            <div class="fg"><label>Fat (g)</label><input type="number" id="food-fat" placeholder="0"></div>
-          </div>
-          <div class="fg"><label>Meal</label>
-            <select id="food-meal"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select>
-          </div>
-          <button class="btn btn-accent btn-full" onclick="addFood()">Add to log</button>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Quick add</div>
-          <button class="quick-food-btn" onclick="quickAdd('Banana',105,1,27,0)"><span>🍌 Banana</span><span class="qf-kcal">105 kcal</span></button>
-          <button class="quick-food-btn" onclick="quickAdd('Chicken breast 100g',165,31,0,4)"><span>🍗 Chicken breast 100g</span><span class="qf-kcal">165 kcal</span></button>
-          <button class="quick-food-btn" onclick="quickAdd('Egg (large)',78,6,0,5)"><span>🥚 Egg (large)</span><span class="qf-kcal">78 kcal</span></button>
-          <button class="quick-food-btn" onclick="quickAdd('White rice 100g',130,3,28,0)"><span>🍚 White rice 100g</span><span class="qf-kcal">130 kcal</span></button>
-          <button class="quick-food-btn" onclick="quickAdd('Oats 50g',190,7,32,3)"><span>🥣 Oats 50g</span><span class="qf-kcal">190 kcal</span></button>
-          <button class="quick-food-btn" onclick="quickAdd('Protein shake',150,30,5,2)"><span>🥤 Protein shake</span><span class="qf-kcal">150 kcal</span></button>
-          <button class="quick-food-btn" onclick="quickAdd('Avocado half',120,1,6,11)"><span>🥑 Avocado half</span><span class="qf-kcal">120 kcal</span></button>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Water tracker</div>
-          <div style="font-size:12px;color:var(--muted);margin-bottom:12px;">Tap to log a glass (250ml)</div>
-          <div class="water-grid" id="nut-water-glasses"></div>
-          <div style="font-size:13px;margin-top:12px;"><span id="nut-water-count">0</span> / 8 glasses today</div>
-        </div>
-      </div>
-
-      <!-- AI scanner -->
-      <div id="nut-ai" style="display:none;">
-        <div class="card">
-          <div class="card-title">AI food photo scanner</div>
-          <div class="callout"><strong>How it works:</strong> Take or upload a photo of your meal and AI will estimate the macros.</div>
-          <div class="ai-zone" onclick="document.getElementById('food-file-input').click()">
-            <div style="font-size:38px;margin-bottom:10px;">📸</div>
-            <h3>Tap to take / upload a photo</h3>
-            <p>JPG, PNG, WebP — any food photo works</p>
-            <input type="file" id="food-file-input" accept="image/*" capture="environment" onchange="handleFoodPhoto(event)">
-          </div>
-          <div id="ai-preview" style="margin-top:14px;display:none;">
-            <img id="ai-img" style="width:100%;max-height:220px;object-fit:cover;border-radius:var(--rsm);border:1px solid var(--border);">
-          </div>
-          <div id="ai-result-area"></div>
-        </div>
-      </div>
-
-      <!-- Today's log -->
-      <div id="nut-hist" style="display:none;">
-        <div class="card">
-          <div class="card-title">Today's food log</div>
-          <div id="food-log-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">Nothing logged yet today.</div></div>
-          <div style="border-top:1px solid var(--border);padding-top:12px;margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;" id="food-totals"></div>
-        </div>
-      </div>
+  <!-- Macros -->
+  <div class="card">
+    <div class="card-title">Macros</div>
+    <div class="mbar-row">
+      <div class="mbar-head"><span style="color:var(--blue);">Protein</span><span id="dash-prot">0 / <b id="dpg">150</b>g</span></div>
+      <div class="mbar-track"><div class="mbar-fill" id="bar-prot" style="background:var(--blue);width:0%"></div></div>
     </div>
-
-    <!-- ════ LIFTING ════ -->
-    <div class="page" id="page-lifting">
-      <div class="pill-tabs">
-        <button class="ptab active" onclick="switchInner('lift','log',this)">Log workout</button>
-        <button class="ptab" onclick="switchInner('lift','hist',this)">History</button>
-        <button class="ptab" onclick="switchInner('lift','prs',this)">PRs</button>
-      </div>
-
-      <div id="lift-log">
-        <div class="card">
-          <div class="card-title">Today's workout</div>
-          <div class="fr" style="margin-bottom:14px;">
-            <div><label>Workout name</label><input type="text" id="workout-name" value="Push Day"></div>
-            <div><label>Duration (min)</label><input type="number" id="workout-duration" value="60"></div>
-          </div>
-          <div id="exercises-container"></div>
-          <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;">
-            <button class="btn btn-ghost btn-sm" onclick="addExercise()">+ Exercise</button>
-            <button class="btn btn-accent" onclick="saveWorkout()">Save workout</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">Templates</div>
-          <div style="display:flex;gap:7px;flex-wrap:wrap;">
-            <button class="btn btn-ghost btn-sm" onclick="loadTemplate('push')">Push</button>
-            <button class="btn btn-ghost btn-sm" onclick="loadTemplate('pull')">Pull</button>
-            <button class="btn btn-ghost btn-sm" onclick="loadTemplate('legs')">Legs</button>
-            <button class="btn btn-ghost btn-sm" onclick="loadTemplate('upper')">Upper</button>
-            <button class="btn btn-ghost btn-sm" onclick="loadTemplate('full')">Full body</button>
-          </div>
-        </div>
-      </div>
-
-      <div id="lift-hist" style="display:none;">
-        <div class="card">
-          <div class="card-title">Workout history</div>
-          <div id="workout-history-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No workouts logged yet.</div></div>
-        </div>
-      </div>
-
-      <div id="lift-prs" style="display:none;">
-        <div class="card" style="margin-bottom:14px;">
-          <div class="card-title">Record a PR</div>
-          <div class="fr" style="margin-bottom:12px;">
-            <div><label>Exercise</label>
-              <select id="pr-exercise">
-                <option>Bench Press</option><option>Squat</option><option>Deadlift</option>
-                <option>Overhead Press</option><option>Barbell Row</option><option>Pull-ups</option>
-              </select>
-            </div>
-            <div><label>Max weight (kg)</label><input type="number" id="pr-weight" placeholder="100"></div>
-          </div>
-          <button class="btn btn-accent btn-full" onclick="savePR()">Record PR</button>
-        </div>
-        <div class="card">
-          <div class="card-title">Personal records</div>
-          <div id="pr-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No PRs yet.</div></div>
-        </div>
-      </div>
+    <div class="mbar-row">
+      <div class="mbar-head"><span style="color:var(--purple);">Carbs</span><span id="dash-carbs">0 / <b id="dcg">250</b>g</span></div>
+      <div class="mbar-track"><div class="mbar-fill" id="bar-carbs" style="background:var(--purple);width:0%"></div></div>
     </div>
-
-    <!-- ════ CARDIO ════ -->
-    <div class="page" id="page-cardio">
-      <div class="pill-tabs">
-        <button class="ptab active" onclick="switchInner('cardio','log',this)">Log session</button>
-        <button class="ptab" onclick="switchInner('cardio','strava',this)">Strava import</button>
-        <button class="ptab" onclick="switchInner('cardio','hist',this)">History</button>
-      </div>
-
-      <div id="cardio-log">
-        <div class="card">
-          <div class="card-title">Log cardio</div>
-          <div class="fg"><label>Activity type</label>
-            <select id="cardio-type"><option>Running</option><option>Cycling</option><option>Walking</option><option>Swimming</option><option>HIIT</option><option>Rowing</option><option>Other</option></select>
-          </div>
-          <div class="fr">
-            <div class="fg"><label>Distance (km)</label><input type="number" id="cardio-dist" placeholder="5.0" step="0.1" oninput="updatePaceCalc()"></div>
-            <div class="fg"><label>Duration (min)</label><input type="number" id="cardio-time" placeholder="30" oninput="updatePaceCalc()"></div>
-          </div>
-          <div class="fr">
-            <div class="fg"><label>Date</label><input type="date" id="cardio-date"></div>
-            <div class="fg"><label>Avg HR (bpm)</label><input type="number" id="cardio-hr" placeholder="150"></div>
-          </div>
-          <div class="fg"><label>Notes</label><input type="text" id="cardio-notes" placeholder="Felt great..."></div>
-          <button class="btn btn-accent btn-full" onclick="addRun()">Log session</button>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Pace calculator</div>
-          <div style="display:flex;gap:16px;">
-            <div class="rstat"><div class="rstat-val" id="pace-display">—</div><div class="rstat-label">min/km</div></div>
-            <div class="rstat"><div class="rstat-val" id="speed-display">—</div><div class="rstat-label">km/h</div></div>
-            <div class="rstat"><div class="rstat-val" id="est-kcal-display">—</div><div class="rstat-label">est. kcal</div></div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-title">This week</div>
-          <div style="display:flex;gap:20px;">
-            <div class="rstat"><div class="rstat-val" id="week-km">0.0</div><div class="rstat-label">km</div></div>
-            <div class="rstat"><div class="rstat-val" id="week-runs">0</div><div class="rstat-label">sessions</div></div>
-            <div class="rstat"><div class="rstat-val" id="week-kcal-burned">0</div><div class="rstat-label">kcal burned</div></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="cardio-strava" style="display:none;">
-        <div class="strava-box">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-            <div style="width:10px;height:10px;background:#FC4C02;border-radius:50%;"></div>
-            <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#FC4C02;">Strava import</div>
-          </div>
-          <div class="callout" style="background:rgba(252,76,2,0.05);border-left-color:#FC4C02;"><strong>How to:</strong> Open Strava → tap your activity → copy the stats below.</div>
-          <div class="fg"><label>Activity name</label><input type="text" id="strava-name" placeholder="Morning Run"></div>
-          <div class="fr">
-            <div class="fg"><label>Distance (km)</label><input type="number" id="strava-dist" step="0.01" placeholder="10.5"></div>
-            <div class="fg"><label>Moving time (min)</label><input type="number" id="strava-time" placeholder="52"></div>
-          </div>
-          <div class="fr">
-            <div class="fg"><label>Elevation (m)</label><input type="number" id="strava-elev" placeholder="145"></div>
-            <div class="fg"><label>Avg HR (bpm)</label><input type="number" id="strava-hr" placeholder="155"></div>
-          </div>
-          <div class="fr">
-            <div class="fg"><label>Calories (from Strava)</label><input type="number" id="strava-kcal" placeholder="520"></div>
-            <div class="fg"><label>Date</label><input type="date" id="strava-date"></div>
-          </div>
-          <div class="fg"><label>Activity type</label>
-            <select id="strava-type"><option>Running</option><option>Cycling</option><option>Walking</option><option>Swimming</option></select>
-          </div>
-          <button class="btn btn-strava btn-full" onclick="importStrava()">Import to etracker</button>
-        </div>
-      </div>
-
-      <div id="cardio-hist" style="display:none;">
-        <div class="card">
-          <div class="card-title">Cardio history</div>
-          <div id="run-history-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No sessions yet.</div></div>
-        </div>
-      </div>
+    <div class="mbar-row" style="margin-bottom:0;">
+      <div class="mbar-head"><span style="color:var(--accent);">Fat</span><span id="dash-fat">0 / <b id="dfg">65</b>g</span></div>
+      <div class="mbar-track"><div class="mbar-fill" id="bar-fat" style="background:var(--accent);width:0%"></div></div>
     </div>
+  </div>
 
-    <!-- ════ WEIGHT ════ -->
-    <div class="page" id="page-weight">
-      <div class="card">
-        <div class="card-title">Log weight</div>
-        <div class="fr" style="margin-bottom:12px;">
-          <div class="fg"><label>Weight (kg)</label><input type="number" id="weight-val" step="0.1" placeholder="75.0"></div>
-          <div class="fg"><label>Date</label><input type="date" id="weight-date"></div>
-        </div>
-        <div class="fg"><label>Notes (optional)</label><input type="text" id="weight-note" placeholder="Morning weigh-in..."></div>
-        <button class="btn btn-accent btn-full" onclick="addWeight()">Log weight</button>
-      </div>
+  <!-- Stats -->
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-val" id="dash-workouts">0</div><div class="stat-label">Workouts this week</div></div>
+    <div class="stat-card"><div class="stat-val" id="dash-km">0.0</div><div class="stat-label">km this week</div></div>
+    <div class="stat-card"><div class="stat-val" id="dash-weight">—</div><div class="stat-label">Current weight (kg)</div></div>
+    <div class="stat-card"><div class="stat-val" id="dash-streak">0</div><div class="stat-label">Day streak 🔥</div></div>
+  </div>
 
-      <div class="stat-grid">
-        <div class="stat-card"><div class="stat-val" id="w-current">—</div><div class="stat-label">Current (kg)</div></div>
-        <div class="stat-card"><div class="stat-val" id="w-change">—</div><div class="stat-label">Total change</div></div>
-        <div class="stat-card"><div class="stat-val" id="w-high">—</div><div class="stat-label">Highest (kg)</div></div>
-        <div class="stat-card"><div class="stat-val" id="w-low">—</div><div class="stat-label">Lowest (kg)</div></div>
-      </div>
-
-      <div class="card" style="margin-bottom:14px;">
-        <div class="card-title">Weight trend</div>
-        <canvas id="weight-chart" height="160"></canvas>
-        <div id="weight-no-data" style="color:var(--muted);font-size:13px;padding:16px 0;text-align:center;">Log at least 2 entries to see chart</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">History</div>
-        <div id="weight-log-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No entries yet.</div></div>
-      </div>
+  <!-- Water -->
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+      <div class="card-title" style="margin-bottom:0;">Water</div>
+      <span style="font-size:12px;color:var(--muted);" id="dash-water-label">0 / 8 glasses</span>
     </div>
+    <div class="water-grid" id="water-glasses"></div>
+  </div>
 
-    <!-- ════ SETTINGS ════ -->
-    <div class="page" id="page-settings">
-      <div class="card" style="margin-bottom:14px;">
-        <div class="card-title">Profile</div>
+  <!-- Recent food -->
+  <div class="card">
+    <div class="card-title">Recent food</div>
+    <div id="dash-food-log"><div style="color:var(--muted);font-size:13px;">Nothing logged today — go to Nutrition</div></div>
+  </div>
+</div>
+
+<!-- ════ NUTRITION ════ -->
+<div class="page" id="page-nutrition">
+  <div class="pill-tabs">
+    <button class="ptab active" onclick="switchInner('nut','log',this)">Log food</button>
+    <button class="ptab" onclick="switchInner('nut','ingredients',this)">My foods</button>
+    <button class="ptab" onclick="switchInner('nut','meals',this)">My meals</button>
+    <button class="ptab" onclick="switchInner('nut','ai',this)">AI scanner</button>
+    <button class="ptab" onclick="switchInner('nut','hist',this)">Today's log</button>
+  </div>
+
+  <!-- Log food -->
+  <div id="nut-log">
+    <div class="card">
+      <div class="card-title">Add manually</div>
+      <div class="fg"><label>Food name</label><input type="text" id="food-name" placeholder="e.g. Chicken breast 200g"></div>
+      <div class="fr">
+        <div class="fg"><label>Calories (kcal)</label><input type="number" id="food-cal" placeholder="0"></div>
+        <div class="fg"><label>Protein (g)</label><input type="number" id="food-prot" placeholder="0"></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Carbs (g)</label><input type="number" id="food-carbs" placeholder="0"></div>
+        <div class="fg"><label>Fat (g)</label><input type="number" id="food-fat" placeholder="0"></div>
+      </div>
+      <div class="fg"><label>Meal</label>
+        <select id="food-meal"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select>
+      </div>
+      <button class="btn btn-accent btn-full" onclick="addFood()">Add to log</button>
+    </div>
+    <div class="card">
+      <div class="card-title">Water tracker</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:12px;">Tap to log a glass (250ml)</div>
+      <div class="water-grid" id="nut-water-glasses"></div>
+      <div style="font-size:13px;margin-top:12px;"><span id="nut-water-count">0</span> / 8 glasses today</div>
+    </div>
+  </div>
+
+  <!-- ── MY FOODS (ingredients + fixed items) ── -->
+  <div id="nut-ingredients" style="display:none;">
+
+    <!-- Add new food item -->
+    <div class="card" style="margin-bottom:14px;">
+      <div class="card-title">Add a food to your library</div>
+      <div class="fg"><label>Food / ingredient name</label><input type="text" id="ing-name" placeholder="e.g. Peanut butter, Whey protein, Snickers bar"></div>
+
+      <!-- Toggle: per 100g ingredient vs fixed item -->
+      <div style="display:flex;gap:8px;margin-bottom:14px;">
+        <button id="ing-type-btn-ing" class="btn btn-accent btn-sm" onclick="setIngType('ingredient')">Per 100g ingredient</button>
+        <button id="ing-type-btn-fixed" class="btn btn-ghost btn-sm" onclick="setIngType('fixed')">Fixed item (e.g. protein bar)</button>
+      </div>
+
+      <!-- Per-100g fields -->
+      <div id="ing-per100-fields">
+        <div class="callout" style="margin-bottom:12px;">Enter macros <strong>per 100g</strong>. When logging, you specify the amount eaten and macros are calculated automatically.</div>
         <div class="fr">
-          <div class="fg"><label>Your name</label><input type="text" id="set-name" placeholder="Name" onchange="saveSettings()"></div>
-          <div class="fg"><label>Body weight (kg)</label><input type="number" id="set-bodyweight" placeholder="75" step="0.1" onchange="saveSettings()"></div>
+          <div class="fg"><label>Calories per 100g</label><input type="number" id="ing-cal100" placeholder="588"></div>
+          <div class="fg"><label>Protein per 100g</label><input type="number" id="ing-prot100" placeholder="25"></div>
+        </div>
+        <div class="fr">
+          <div class="fg"><label>Carbs per 100g</label><input type="number" id="ing-carbs100" placeholder="20"></div>
+          <div class="fg"><label>Fat per 100g</label><input type="number" id="ing-fat100" placeholder="50"></div>
         </div>
       </div>
 
-      <div class="card" style="margin-bottom:14px;">
-        <div class="card-title">Daily goals</div>
-        <div class="srow">
-          <div><div class="slabel">Calories</div><div class="ssub">kcal/day</div></div>
-          <input type="number" id="set-cal-goal" style="width:90px;text-align:right;" value="2000" onchange="saveSettings()">
+      <!-- Fixed item fields -->
+      <div id="ing-fixed-fields" style="display:none;">
+        <div class="callout" style="margin-bottom:12px;">Enter the <strong>total macros for this item</strong> as consumed (e.g. one whole protein bar).</div>
+        <div class="fr">
+          <div class="fg"><label>Total calories</label><input type="number" id="ing-cal-fixed" placeholder="200"></div>
+          <div class="fg"><label>Total protein (g)</label><input type="number" id="ing-prot-fixed" placeholder="20"></div>
         </div>
-        <div class="srow">
-          <div class="slabel">Protein</div>
-          <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-prot-goal" style="width:70px;text-align:right;" value="150" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">g</span></div>
-        </div>
-        <div class="srow">
-          <div class="slabel">Carbs</div>
-          <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-carb-goal" style="width:70px;text-align:right;" value="250" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">g</span></div>
-        </div>
-        <div class="srow">
-          <div class="slabel">Fat</div>
-          <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-fat-goal" style="width:70px;text-align:right;" value="65" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">g</span></div>
-        </div>
-        <div class="srow" style="border:none;">
-          <div class="slabel">Weekly km goal</div>
-          <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-km-goal" style="width:70px;text-align:right;" value="20" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">km</span></div>
+        <div class="fr">
+          <div class="fg"><label>Total carbs (g)</label><input type="number" id="ing-carbs-fixed" placeholder="22"></div>
+          <div class="fg"><label>Total fat (g)</label><input type="number" id="ing-fat-fixed" placeholder="7"></div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-title">Data</div>
-        <div style="display:flex;flex-direction:column;gap:10px;">
-          <button class="btn btn-ghost btn-full" onclick="exportData()">Export all data (JSON)</button>
-          <button class="btn btn-danger btn-full" onclick="if(confirm('Clear all data? Cannot be undone.'))clearData()">Clear all data</button>
+      <button class="btn btn-accent btn-full" onclick="saveIngredient()">Save to my foods</button>
+    </div>
+
+    <!-- Library list -->
+    <div class="card">
+      <div class="card-title">My foods library</div>
+      <div id="ing-library-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No foods saved yet. Add some above!</div></div>
+    </div>
+
+    <!-- Log serving modal overlay (inline) -->
+    <div id="ing-log-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:100;display:none;align-items:flex-end;justify-content:center;">
+      <div style="background:var(--bg2);border-radius:var(--r) var(--r) 0 0;padding:24px 20px;width:100%;max-width:430px;border-top:1px solid var(--border);">
+        <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:4px;" id="modal-ing-name">—</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:16px;" id="modal-ing-sub">—</div>
+        <div id="modal-amount-row" style="margin-bottom:12px;">
+          <label>Amount eaten (g)</label>
+          <input type="number" id="modal-amount" placeholder="30" oninput="updateModalPreview()">
+        </div>
+        <div id="modal-preview" style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;"></div>
+        <div class="fg"><label>Meal</label>
+          <select id="modal-meal"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select>
+        </div>
+        <div style="display:flex;gap:10px;">
+          <button class="btn btn-ghost" style="flex:1;" onclick="closeIngModal()">Cancel</button>
+          <button class="btn btn-accent" style="flex:2;" onclick="logFromModal()">Add to log</button>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- ── MY MEALS ── -->
+  <div id="nut-meals" style="display:none;">
+
+    <!-- Create new meal -->
+    <div class="card" style="margin-bottom:14px;">
+      <div class="card-title">Create a saved meal</div>
+      <div class="fg"><label>Meal name</label><input type="text" id="meal-name" placeholder="e.g. Pre-workout breakfast, Post-gym shake"></div>
+      <div class="fr">
+        <div class="fg"><label>Total calories</label><input type="number" id="meal-cal" placeholder="500"></div>
+        <div class="fg"><label>Protein (g)</label><input type="number" id="meal-prot" placeholder="40"></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Carbs (g)</label><input type="number" id="meal-carbs" placeholder="60"></div>
+        <div class="fg"><label>Fat (g)</label><input type="number" id="meal-fat" placeholder="12"></div>
+      </div>
+      <div class="fg"><label>Description (optional)</label>
+        <input type="text" id="meal-desc" placeholder="e.g. 3 eggs, oats, banana, protein shake">
+      </div>
+      <div class="fg"><label>Default meal slot</label>
+        <select id="meal-slot"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select>
+      </div>
+      <button class="btn btn-accent btn-full" onclick="saveMeal()">Save meal</button>
+    </div>
+
+    <!-- Saved meals list -->
+    <div class="card">
+      <div class="card-title">My saved meals</div>
+      <div id="meals-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No meals saved yet. Create one above!</div></div>
+    </div>
+  </div>
+
+  <!-- AI scanner -->
+  <div id="nut-ai" style="display:none;">
+    <div class="card">
+      <div class="card-title">AI food photo scanner</div>
+      <div class="callout"><strong>How it works:</strong> Take or upload a photo of your meal and AI will estimate the macros.</div>
+      <div class="ai-zone" onclick="document.getElementById('food-file-input').click()">
+        <div style="font-size:38px;margin-bottom:10px;">📸</div>
+        <h3>Tap to take / upload a photo</h3>
+        <p>JPG, PNG, WebP — any food photo works</p>
+        <input type="file" id="food-file-input" accept="image/*" capture="environment" onchange="handleFoodPhoto(event)">
+      </div>
+      <div id="ai-preview" style="margin-top:14px;display:none;">
+        <img id="ai-img" style="width:100%;max-height:220px;object-fit:cover;border-radius:var(--rsm);border:1px solid var(--border);">
+      </div>
+      <div id="ai-result-area"></div>
+    </div>
+  </div>
+
+  <!-- Today's log -->
+  <div id="nut-hist" style="display:none;">
+    <div class="card">
+      <div class="card-title">Today's food log</div>
+      <div id="food-log-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">Nothing logged yet today.</div></div>
+      <div style="border-top:1px solid var(--border);padding-top:12px;margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;" id="food-totals"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ LIFTING ════ -->
+<div class="page" id="page-lifting">
+  <div class="pill-tabs">
+    <button class="ptab active" onclick="switchInner('lift','log',this)">Log workout</button>
+    <button class="ptab" onclick="switchInner('lift','hist',this)">History</button>
+    <button class="ptab" onclick="switchInner('lift','prs',this)">PRs</button>
+  </div>
+
+  <div id="lift-log">
+    <div class="card">
+      <div class="card-title">Today's workout</div>
+      <div class="fr" style="margin-bottom:14px;">
+        <div><label>Workout name</label><input type="text" id="workout-name" value="Push Day"></div>
+        <div><label>Duration (min)</label><input type="number" id="workout-duration" value="60"></div>
+      </div>
+      <div id="exercises-container"></div>
+      <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;">
+        <button class="btn btn-ghost btn-sm" onclick="addExercise()">+ Exercise</button>
+        <button class="btn btn-accent" onclick="saveWorkout()">Save workout</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Templates</div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;">
+        <button class="btn btn-ghost btn-sm" onclick="loadTemplate('push')">Push</button>
+        <button class="btn btn-ghost btn-sm" onclick="loadTemplate('pull')">Pull</button>
+        <button class="btn btn-ghost btn-sm" onclick="loadTemplate('legs')">Legs</button>
+        <button class="btn btn-ghost btn-sm" onclick="loadTemplate('upper')">Upper</button>
+        <button class="btn btn-ghost btn-sm" onclick="loadTemplate('full')">Full body</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="lift-hist" style="display:none;">
+    <div class="card">
+      <div class="card-title">Workout history</div>
+      <div id="workout-history-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No workouts logged yet.</div></div>
+    </div>
+  </div>
+
+  <div id="lift-prs" style="display:none;">
+    <div class="card" style="margin-bottom:14px;">
+      <div class="card-title">Record a PR</div>
+      <div class="fr" style="margin-bottom:12px;">
+        <div><label>Exercise</label>
+          <select id="pr-exercise">
+            <option>Bench Press</option><option>Squat</option><option>Deadlift</option>
+            <option>Overhead Press</option><option>Barbell Row</option><option>Pull-ups</option>
+          </select>
+        </div>
+        <div><label>Max weight (kg)</label><input type="number" id="pr-weight" placeholder="100"></div>
+      </div>
+      <button class="btn btn-accent btn-full" onclick="savePR()">Record PR</button>
+    </div>
+    <div class="card">
+      <div class="card-title">Personal records</div>
+      <div id="pr-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No PRs yet.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CARDIO ════ -->
+<div class="page" id="page-cardio">
+  <div class="pill-tabs">
+    <button class="ptab active" onclick="switchInner('cardio','log',this)">Log session</button>
+    <button class="ptab" onclick="switchInner('cardio','strava',this)">Strava import</button>
+    <button class="ptab" onclick="switchInner('cardio','hist',this)">History</button>
+  </div>
+
+  <div id="cardio-log">
+    <div class="card">
+      <div class="card-title">Log cardio</div>
+      <div class="fg"><label>Activity type</label>
+        <select id="cardio-type"><option>Running</option><option>Cycling</option><option>Walking</option><option>Swimming</option><option>HIIT</option><option>Rowing</option><option>Other</option></select>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Distance (km)</label><input type="number" id="cardio-dist" placeholder="5.0" step="0.1" oninput="updatePaceCalc()"></div>
+        <div class="fg"><label>Duration (min)</label><input type="number" id="cardio-time" placeholder="30" oninput="updatePaceCalc()"></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Date</label><input type="date" id="cardio-date"></div>
+        <div class="fg"><label>Avg HR (bpm)</label><input type="number" id="cardio-hr" placeholder="150"></div>
+      </div>
+      <div class="fg"><label>Notes</label><input type="text" id="cardio-notes" placeholder="Felt great..."></div>
+      <button class="btn btn-accent btn-full" onclick="addRun()">Log session</button>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Pace calculator</div>
+      <div style="display:flex;gap:16px;">
+        <div class="rstat"><div class="rstat-val" id="pace-display">—</div><div class="rstat-label">min/km</div></div>
+        <div class="rstat"><div class="rstat-val" id="speed-display">—</div><div class="rstat-label">km/h</div></div>
+        <div class="rstat"><div class="rstat-val" id="est-kcal-display">—</div><div class="rstat-label">est. kcal</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">This week</div>
+      <div style="display:flex;gap:20px;">
+        <div class="rstat"><div class="rstat-val" id="week-km">0.0</div><div class="rstat-label">km</div></div>
+        <div class="rstat"><div class="rstat-val" id="week-runs">0</div><div class="rstat-label">sessions</div></div>
+        <div class="rstat"><div class="rstat-val" id="week-kcal-burned">0</div><div class="rstat-label">kcal burned</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cardio-strava" style="display:none;">
+    <div class="strava-box">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="width:10px;height:10px;background:#FC4C02;border-radius:50%;"></div>
+        <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#FC4C02;">Strava import</div>
+      </div>
+      <div class="callout" style="background:rgba(252,76,2,0.05);border-left-color:#FC4C02;"><strong>How to:</strong> Open Strava → tap your activity → copy the stats below.</div>
+      <div class="fg"><label>Activity name</label><input type="text" id="strava-name" placeholder="Morning Run"></div>
+      <div class="fr">
+        <div class="fg"><label>Distance (km)</label><input type="number" id="strava-dist" step="0.01" placeholder="10.5"></div>
+        <div class="fg"><label>Moving time (min)</label><input type="number" id="strava-time" placeholder="52"></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Elevation (m)</label><input type="number" id="strava-elev" placeholder="145"></div>
+        <div class="fg"><label>Avg HR (bpm)</label><input type="number" id="strava-hr" placeholder="155"></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Calories (from Strava)</label><input type="number" id="strava-kcal" placeholder="520"></div>
+        <div class="fg"><label>Date</label><input type="date" id="strava-date"></div>
+      </div>
+      <div class="fg"><label>Activity type</label>
+        <select id="strava-type"><option>Running</option><option>Cycling</option><option>Walking</option><option>Swimming</option></select>
+      </div>
+      <button class="btn btn-strava btn-full" onclick="importStrava()">Import to etracker</button>
+    </div>
+  </div>
+
+  <div id="cardio-hist" style="display:none;">
+    <div class="card">
+      <div class="card-title">Cardio history</div>
+      <div id="run-history-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No sessions yet.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ WEIGHT ════ -->
+<div class="page" id="page-weight">
+  <div class="card">
+    <div class="card-title">Log weight</div>
+    <div class="fr" style="margin-bottom:12px;">
+      <div class="fg"><label>Weight (kg)</label><input type="number" id="weight-val" step="0.1" placeholder="75.0"></div>
+      <div class="fg"><label>Date</label><input type="date" id="weight-date"></div>
+    </div>
+    <div class="fg"><label>Notes (optional)</label><input type="text" id="weight-note" placeholder="Morning weigh-in..."></div>
+    <button class="btn btn-accent btn-full" onclick="addWeight()">Log weight</button>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-val" id="w-current">—</div><div class="stat-label">Current (kg)</div></div>
+    <div class="stat-card"><div class="stat-val" id="w-change">—</div><div class="stat-label">Total change</div></div>
+    <div class="stat-card"><div class="stat-val" id="w-high">—</div><div class="stat-label">Highest (kg)</div></div>
+    <div class="stat-card"><div class="stat-val" id="w-low">—</div><div class="stat-label">Lowest (kg)</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Weight trend</div>
+    <canvas id="weight-chart" height="160"></canvas>
+    <div id="weight-no-data" style="color:var(--muted);font-size:13px;padding:16px 0;text-align:center;">Log at least 2 entries to see chart</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">History</div>
+    <div id="weight-log-list"><div style="color:var(--muted);font-size:13px;padding:8px 0;">No entries yet.</div></div>
+  </div>
+</div>
+
+<!-- ════ SETTINGS ════ -->
+<div class="page" id="page-settings">
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Profile</div>
+    <div class="fr">
+      <div class="fg"><label>Your name</label><input type="text" id="set-name" placeholder="Name" onchange="saveSettings()"></div>
+      <div class="fg"><label>Body weight (kg)</label><input type="number" id="set-bodyweight" placeholder="75" step="0.1" onchange="saveSettings()"></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Daily goals</div>
+    <div class="srow">
+      <div><div class="slabel">Calories</div><div class="ssub">kcal/day</div></div>
+      <input type="number" id="set-cal-goal" style="width:90px;text-align:right;" value="2000" onchange="saveSettings()">
+    </div>
+    <div class="srow">
+      <div class="slabel">Protein</div>
+      <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-prot-goal" style="width:70px;text-align:right;" value="150" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">g</span></div>
+    </div>
+    <div class="srow">
+      <div class="slabel">Carbs</div>
+      <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-carb-goal" style="width:70px;text-align:right;" value="250" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">g</span></div>
+    </div>
+    <div class="srow">
+      <div class="slabel">Fat</div>
+      <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-fat-goal" style="width:70px;text-align:right;" value="65" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">g</span></div>
+    </div>
+    <div class="srow" style="border:none;">
+      <div class="slabel">Weekly km goal</div>
+      <div style="display:flex;align-items:center;gap:5px;"><input type="number" id="set-km-goal" style="width:70px;text-align:right;" value="20" onchange="saveSettings()"><span style="color:var(--muted);font-size:12px;">km</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Data</div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <button class="btn btn-ghost btn-full" onclick="exportData()">Export all data (JSON)</button>
+      <button class="btn btn-danger btn-full" onclick="if(confirm('Clear all data? Cannot be undone.'))clearData()">Clear all data</button>
+    </div>
+  </div>
+</div>
+```
 
   </div><!-- /pages -->
 
   <!-- Bottom nav -->
+
   <div class="botnav">
     <button class="navbtn active" onclick="switchPage('home',this)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
@@ -665,13 +763,16 @@ canvas{max-width:100%;}
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
 <script>
 // ── State ──
 let state = {
   settings:{calGoal:2000,protGoal:150,carbGoal:250,fatGoal:65,kmGoal:20,name:'',bodyweight:''},
   foodLog:[],workouts:[],runs:[],weightLog:[],prs:{},water:{},exercises:[],
+  ingredients:[],savedMeals:[],
 };
 let weightChart=null;
+let activeIngredient=null;
 
 function today(){return new Date().toISOString().split('T')[0];}
 function dateStr(d){return new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});}
@@ -698,13 +799,15 @@ function switchPage(name,btn){
 }
 
 function switchInner(prefix,name,btn){
-  const ids={nut:['log','ai','hist'],lift:['log','hist','prs'],cardio:['log','strava','hist']};
+  const ids={nut:['log','ingredients','meals','ai','hist'],lift:['log','hist','prs'],cardio:['log','strava','hist']};
   ids[prefix].forEach(id=>{const el=document.getElementById(prefix+'-'+id);if(el)el.style.display='none';});
   document.getElementById(prefix+'-'+name).style.display='block';
   const tabs=btn.closest('.pill-tabs');
   tabs.querySelectorAll('.ptab').forEach(t=>t.classList.remove('active'));
   btn.classList.add('active');
   if(prefix==='nut'&&name==='hist')renderFoodLog();
+  if(prefix==='nut'&&name==='ingredients')renderIngLibrary();
+  if(prefix==='nut'&&name==='meals')renderMealsList();
   if(prefix==='lift'&&name==='hist')renderWorkoutHistory();
   if(prefix==='lift'&&name==='prs')renderPRs();
   if(prefix==='cardio'&&name==='hist')renderRunHistory();
@@ -1085,6 +1188,208 @@ function renderWeightChart(){
   });
 }
 
+// ── Ingredients / My Foods ──
+let ingType = 'ingredient';
+
+function setIngType(type) {
+  ingType = type;
+  document.getElementById('ing-per100-fields').style.display = type==='ingredient' ? 'block' : 'none';
+  document.getElementById('ing-fixed-fields').style.display = type==='fixed' ? 'block' : 'none';
+  document.getElementById('ing-type-btn-ing').className = 'btn btn-sm ' + (type==='ingredient' ? 'btn-accent' : 'btn-ghost');
+  document.getElementById('ing-type-btn-fixed').className = 'btn btn-sm ' + (type==='fixed' ? 'btn-accent' : 'btn-ghost');
+}
+
+function saveIngredient() {
+  const name = document.getElementById('ing-name').value.trim();
+  if(!name) return alert('Please enter a food name');
+  let ing;
+  if(ingType === 'ingredient') {
+    const cal100 = parseFloat(document.getElementById('ing-cal100').value)||0;
+    const prot100 = parseFloat(document.getElementById('ing-prot100').value)||0;
+    const carbs100 = parseFloat(document.getElementById('ing-carbs100').value)||0;
+    const fat100 = parseFloat(document.getElementById('ing-fat100').value)||0;
+    if(!cal100) return alert('Please enter calories per 100g');
+    ing = {id:Date.now(), name, type:'ingredient', cal100, prot100, carbs100, fat100};
+  } else {
+    const cal = parseFloat(document.getElementById('ing-cal-fixed').value)||0;
+    const prot = parseFloat(document.getElementById('ing-prot-fixed').value)||0;
+    const carbs = parseFloat(document.getElementById('ing-carbs-fixed').value)||0;
+    const fat = parseFloat(document.getElementById('ing-fat-fixed').value)||0;
+    if(!cal) return alert('Please enter total calories');
+    ing = {id:Date.now(), name, type:'fixed', cal, prot, carbs, fat};
+  }
+  state.ingredients.push(ing);
+  save(); renderIngLibrary();
+  document.getElementById('ing-name').value='';
+  ['ing-cal100','ing-prot100','ing-carbs100','ing-fat100','ing-cal-fixed','ing-prot-fixed','ing-carbs-fixed','ing-fat-fixed'].forEach(id=>document.getElementById(id).value='');
+}
+
+function renderIngLibrary() {
+  const el = document.getElementById('ing-library-list');
+  if(!state.ingredients.length) {
+    el.innerHTML='<div style="color:var(--muted);font-size:13px;padding:8px 0;">No foods saved yet. Add some above!</div>';
+    return;
+  }
+  el.innerHTML = state.ingredients.map(ing => {
+    const sub = ing.type==='ingredient'
+      ? `Per 100g: ${ing.cal100} kcal · ${ing.prot100}g P · ${ing.carbs100}g C · ${ing.fat100}g F`
+      : `Fixed: ${ing.cal} kcal · ${ing.prot}g P · ${ing.carbs}g C · ${ing.fat}g F`;
+    const badge = ing.type==='ingredient'
+      ? `<span class="mb mb-p" style="font-size:10px;">per 100g</span>`
+      : `<span class="mb mb-cal" style="font-size:10px;">fixed item</span>`;
+    return `<div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);">
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;align-items:center;gap:7px;margin-bottom:3px;">
+          <div style="font-size:14px;font-weight:500;">${ing.name}</div>${badge}
+        </div>
+        <div style="font-size:11px;color:var(--muted);">${sub}</div>
+      </div>
+      <div style="display:flex;gap:6px;flex-shrink:0;">
+        <button class="btn btn-accent btn-sm" onclick="openIngModal(${ing.id})">Log</button>
+        <button class="btn btn-danger btn-sm" style="padding:7px 10px;" onclick="deleteIngredient(${ing.id})">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function deleteIngredient(id) {
+  if(!confirm('Remove this food from your library?')) return;
+  state.ingredients = state.ingredients.filter(i=>i.id!==id);
+  save(); renderIngLibrary();
+}
+
+function openIngModal(id) {
+  activeIngredient = state.ingredients.find(i=>i.id===id);
+  if(!activeIngredient) return;
+  const modal = document.getElementById('ing-log-modal');
+  document.getElementById('modal-ing-name').textContent = activeIngredient.name;
+  if(activeIngredient.type==='ingredient') {
+    document.getElementById('modal-ing-sub').textContent = `Per 100g: ${activeIngredient.cal100} kcal · ${activeIngredient.prot100}g P · ${activeIngredient.carbs100}g C · ${activeIngredient.fat100}g F`;
+    document.getElementById('modal-amount-row').style.display='block';
+    document.getElementById('modal-amount').value='';
+    document.getElementById('modal-preview').innerHTML='<div style="color:var(--muted);font-size:12px;">Enter amount to see calculated macros</div>';
+  } else {
+    document.getElementById('modal-ing-sub').textContent = `Fixed item: ${activeIngredient.cal} kcal · ${activeIngredient.prot}g P · ${activeIngredient.carbs}g C · ${activeIngredient.fat}g F`;
+    document.getElementById('modal-amount-row').style.display='none';
+    document.getElementById('modal-preview').innerHTML=`
+      <span class="mb mb-cal" style="font-size:12px;padding:5px 10px;">${activeIngredient.cal} kcal</span>
+      <span class="mb mb-p" style="font-size:12px;padding:5px 10px;">${activeIngredient.prot}g P</span>
+      <span class="mb mb-c" style="font-size:12px;padding:5px 10px;">${activeIngredient.carbs}g C</span>
+      <span class="mb mb-f" style="font-size:12px;padding:5px 10px;">${activeIngredient.fat}g F</span>`;
+  }
+  modal.style.display='flex';
+}
+
+function updateModalPreview() {
+  if(!activeIngredient || activeIngredient.type!=='ingredient') return;
+  const g = parseFloat(document.getElementById('modal-amount').value)||0;
+  if(!g) { document.getElementById('modal-preview').innerHTML='<div style="color:var(--muted);font-size:12px;">Enter amount to see calculated macros</div>'; return; }
+  const f = g/100;
+  const cal = Math.round(activeIngredient.cal100*f);
+  const prot = Math.round(activeIngredient.prot100*f*10)/10;
+  const carbs = Math.round(activeIngredient.carbs100*f*10)/10;
+  const fat = Math.round(activeIngredient.fat100*f*10)/10;
+  document.getElementById('modal-preview').innerHTML=`
+    <span class="mb mb-cal" style="font-size:12px;padding:5px 10px;">${cal} kcal</span>
+    <span class="mb mb-p" style="font-size:12px;padding:5px 10px;">${prot}g P</span>
+    <span class="mb mb-c" style="font-size:12px;padding:5px 10px;">${carbs}g C</span>
+    <span class="mb mb-f" style="font-size:12px;padding:5px 10px;">${fat}g F</span>`;
+}
+
+function closeIngModal() {
+  document.getElementById('ing-log-modal').style.display='none';
+  activeIngredient=null;
+}
+
+function logFromModal() {
+  if(!activeIngredient) return;
+  const meal = document.getElementById('modal-meal').value;
+  let cal,prot,carbs,fat,name;
+  if(activeIngredient.type==='fixed') {
+    ({cal,prot,carbs,fat,name}=activeIngredient);
+  } else {
+    const g = parseFloat(document.getElementById('modal-amount').value)||0;
+    if(!g) return alert('Please enter an amount');
+    const f=g/100;
+    cal=Math.round(activeIngredient.cal100*f);
+    prot=Math.round(activeIngredient.prot100*f*10)/10;
+    carbs=Math.round(activeIngredient.carbs100*f*10)/10;
+    fat=Math.round(activeIngredient.fat100*f*10)/10;
+    name=activeIngredient.name+' ('+g+'g)';
+  }
+  state.foodLog.push({id:Date.now(),date:today(),name,cal,prot,carbs,fat,meal});
+  save(); renderDashboard(); closeIngModal();
+  // Brief success flash
+  const el = document.getElementById('ing-library-list');
+  const flash = document.createElement('div');
+  flash.style.cssText='position:fixed;top:80px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0c0c0e;font-family:Syne,sans-serif;font-size:13px;font-weight:700;padding:10px 20px;border-radius:100px;z-index:200;pointer-events:none;';
+  flash.textContent='✓ Added to today\'s log';
+  document.body.appendChild(flash);
+  setTimeout(()=>flash.remove(),2000);
+}
+
+// ── Saved Meals ──
+function saveMeal() {
+  const name = document.getElementById('meal-name').value.trim();
+  const cal = parseFloat(document.getElementById('meal-cal').value)||0;
+  const prot = parseFloat(document.getElementById('meal-prot').value)||0;
+  const carbs = parseFloat(document.getElementById('meal-carbs').value)||0;
+  const fat = parseFloat(document.getElementById('meal-fat').value)||0;
+  const desc = document.getElementById('meal-desc').value.trim();
+  const slot = document.getElementById('meal-slot').value;
+  if(!name) return alert('Please enter a meal name');
+  if(!cal) return alert('Please enter total calories');
+  state.savedMeals.push({id:Date.now(),name,cal,prot,carbs,fat,desc,slot});
+  save(); renderMealsList();
+  ['meal-name','meal-cal','meal-prot','meal-carbs','meal-fat','meal-desc'].forEach(id=>document.getElementById(id).value='');
+}
+
+function renderMealsList() {
+  const el = document.getElementById('meals-list');
+  if(!state.savedMeals.length) {
+    el.innerHTML='<div style="color:var(--muted);font-size:13px;padding:8px 0;">No meals saved yet. Create one above!</div>';
+    return;
+  }
+  el.innerHTML = state.savedMeals.map(m=>`
+    <div style="padding:13px 0;border-bottom:1px solid var(--border);">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:14px;font-weight:500;margin-bottom:2px;">${m.name}</div>
+          ${m.desc?`<div style="font-size:11px;color:var(--muted);">${m.desc}</div>`:''}
+        </div>
+        <span class="mb mb-p" style="font-size:10px;margin-left:8px;flex-shrink:0;">${m.slot}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span class="mb mb-cal" style="font-size:11px;padding:4px 9px;">${m.cal} kcal</span>
+        <span class="mb mb-p" style="font-size:11px;padding:4px 9px;">${m.prot}g P</span>
+        <span class="mb mb-c" style="font-size:11px;padding:4px 9px;">${m.carbs}g C</span>
+        <span class="mb mb-f" style="font-size:11px;padding:4px 9px;">${m.fat}g F</span>
+        <div style="margin-left:auto;display:flex;gap:6px;">
+          <button class="btn btn-accent btn-sm" onclick="logSavedMeal(${m.id})">Log</button>
+          <button class="btn btn-danger btn-sm" style="padding:7px 10px;" onclick="deleteSavedMeal(${m.id})">✕</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function logSavedMeal(id) {
+  const m = state.savedMeals.find(m=>m.id===id);
+  if(!m) return;
+  state.foodLog.push({id:Date.now(),date:today(),name:m.name,cal:m.cal,prot:m.prot,carbs:m.carbs,fat:m.fat,meal:m.slot});
+  save(); renderDashboard();
+  const flash = document.createElement('div');
+  flash.style.cssText='position:fixed;top:80px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0c0c0e;font-family:Syne,sans-serif;font-size:13px;font-weight:700;padding:10px 20px;border-radius:100px;z-index:200;pointer-events:none;';
+  flash.textContent='✓ '+m.name+' logged!';
+  document.body.appendChild(flash);
+  setTimeout(()=>flash.remove(),2000);
+}
+
+function deleteSavedMeal(id) {
+  if(!confirm('Delete this saved meal?')) return;
+  state.savedMeals = state.savedMeals.filter(m=>m.id!==id);
+  save(); renderMealsList();
+}
+
 // ── Data ──
 function exportData(){
   const b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});
@@ -1092,5 +1397,6 @@ function exportData(){
 }
 function clearData(){localStorage.removeItem('etracker_state');location.reload();}
 </script>
+
 </body>
 </html>
